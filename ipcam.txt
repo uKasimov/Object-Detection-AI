@@ -1,0 +1,12 @@
+import cv2
+
+stream = cv2.VideoCapture('http://192.168.0.94:4747/video')
+
+while True:
+
+    cv2.imshow('IP Camera stream',f)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cv2.destroyAllWindows()
